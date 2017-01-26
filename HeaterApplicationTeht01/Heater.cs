@@ -26,7 +26,7 @@ namespace HeaterApplicationTeht01
         {
             IsOn = false;
         }
-        //destructor 
+        //destructor sadasd
         ~Heater()
         {
             Console.WriteLine("Heater object destroyed");
