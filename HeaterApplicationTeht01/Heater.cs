@@ -22,9 +22,9 @@ namespace HeaterApplicationTeht01
             Console.WriteLine("Humidity: " + Humidity);
         }
 
-        public void Power()
+        public void Power(bool value)
         {
-            IsOn = false;
+            IsOn = value;
         }
         //destructor sadasd
         ~Heater()

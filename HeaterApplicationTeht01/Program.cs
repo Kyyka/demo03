@@ -13,7 +13,7 @@ namespace HeaterApplicationTeht01
             //create one instance of heater class
             Heater heater = new Heater();
             heater.Printdata();
-            heater.Power();
+            heater.Power(true);
             heater.Temperature = 80;
             heater.Humidity = 98.3;
             heater.Printdata();
