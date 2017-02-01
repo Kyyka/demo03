@@ -17,12 +17,19 @@ namespace teht04
             Console.WriteLine("Vehicle name: " + Name);
             Console.WriteLine("Vehcile speed: " + Speed);
             Console.WriteLine("Which tyres: " + Tyres);
+            Console.WriteLine("---------------------------");
         }
 
-        public void ToString()
+        public Vehicle(string name, int speed, string tyres)
         {
-            Console.WriteLine(" -Vehicle name: " + Name + " -Vehicle speed: " + Speed + " -Which tyres: " + Tyres);
+            Name = name;
+            Speed = speed;
+            Tyres = tyres;
         }
-
+        public override string ToString()
+        {
+            return string.Format("Vehicle name: {0}, Vehicle speed: {1}, Which tyres: {2}", Name, Speed, Tyres);
+            
+        }
     }
 }

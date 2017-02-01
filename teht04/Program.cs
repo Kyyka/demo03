@@ -10,14 +10,14 @@ namespace teht04
     {
         static void Main(string[] args)
         {
-            Vehicle vehicle = new Vehicle();
+            Vehicle vehicle = new Vehicle("Ford", 200, "Slick");
             vehicle.Printdata();
-            vehicle.ToString();
-            vehicle.Name = "Ford";
-            vehicle.Speed = 200;
-            vehicle.Tyres = "Slick";
-            vehicle.ToString();
+
+
+            Vehicle vehicle2 = new Vehicle("Opel", 180, "Grip");
+            Console.WriteLine(vehicle2);
 
         }
+        
     }
 }
