@@ -11,14 +11,22 @@ namespace WasherApplicationTeht02
         static void Main(string[] args)
         {
             //create one instance of washer class
-            Washer washer = new Washer();
-            washer.Printdata();
-            washer.Power(true);
-            washer.Hatch(true);
-            washer.Sling(true);
-            washer.Temperature = 60;
-            washer.Program = 5;
-            washer.Printdata();
+            Washer washer1 = new Washer("Hienopesu");
+            washer1.IsOn = true;
+            washer1.Sling(true);
+            washer1.OpenClosed = true;
+            washer1.Temperature = 60;
+            washer1.Printdata();
+
+            Washer washer2 = new Washer(60);
+            washer2.IsOn = true;
+            washer2.Sling(true);
+            washer2.OpenClosed = true;
+            washer2.Program = "Valkopesu";
+            washer2.Printdata();
+
+            Washer washer3 = new Washer(true, "valkopesu", 40);
+            washer3.Printdata();
         }
     }
 }

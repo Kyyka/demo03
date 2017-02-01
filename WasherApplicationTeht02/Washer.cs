@@ -13,7 +13,7 @@ namespace WasherApplicationTeht02
         public bool OpenClosed { get; set; }
         public bool SlingYesNo { get; set; }
         public int Temperature { get; set; }
-        public int Program { get; set; }
+        public string Program { get; set; }
         //methods
         public void Printdata()
         {
@@ -25,14 +25,26 @@ namespace WasherApplicationTeht02
             Console.WriteLine("------------------------------------");
         }
 
-        public void Power(bool value)
+        public Washer(bool ison)
         {
-            IsOn = value;
+            IsOn = ison;
         }
 
-        public void Hatch(bool value)
+        public Washer(string program)
         {
-            OpenClosed = value;
+            Program = program;
+        }
+        
+        public Washer(int temperature)
+        {
+            Temperature = temperature;
+        }
+        
+        public Washer(bool ison, string program, int temperature)
+        {
+            IsOn = ison;
+            Program = program;
+            Temperature = temperature;
         }
 
         public void Sling(bool value)
